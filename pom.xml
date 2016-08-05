@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.aerospike.unit</groupId>
 	<artifactId>aerospike-unit</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<url>http://maven.apache.org</url>
@@ -61,6 +61,19 @@
 		<developerConnection>scm:git:https://github.com/maverickgautam/Aerospike-unit.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+
+	<distributionManagement>
+        <repository>
+            <id>libs-release-local</id>
+            <name>devtools1.1dmp.ru-releases</name>
+            <url>http://devtools1.1dmp.ru/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>libs-snapshot-local</id>
+            <name>devtools1.1dmp.ru-snapshots</name>
+            <url>http://devtools1.1dmp.ru/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<dependencies>
 		<dependency>
